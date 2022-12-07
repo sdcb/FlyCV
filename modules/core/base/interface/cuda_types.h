@@ -61,7 +61,7 @@ struct CUDADeviceInfo {
     cudaDeviceProp device_prop;
 };
 
-class FCV_CLASS Stream {
+class Stream {
 public:
     Stream() : _stream(0) {
         cudaStreamCreate(&_stream);
